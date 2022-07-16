@@ -1,0 +1,71 @@
+.footer-top {
+  padding: 96px 0;
+  max-width: 708px;
+  margin: 0 auto;
+  text-align: center;
+  .__heading {
+    word-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .__desc {
+    margin-bottom: 40px;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f9fafb;
+    border-radius: 6px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    &:hover {
+      border-color: rgba(0, 0, 0, 0.16);
+    }
+  }
+  form.focus {
+    border: 1px solid #5b85ae;
+  }
+  input {
+    width: 95%;
+    padding: 12px 15px;
+    &::placeholder {
+      color: black;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  button {
+    width: 5%;
+    color: #49739a;
+  }
+}
+
+.footer-middle {
+  background-color: #f9fafb;
+  padding: 80px 40px;
+  display: flex;
+  .__logo {
+    margin-right: 118px;
+  }
+  .footer-menu {
+    display: flex;
+  }
+  .footer-item {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .footer-link {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+}

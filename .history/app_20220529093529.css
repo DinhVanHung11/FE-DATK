@@ -1,0 +1,17 @@
+.container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "PT Serif", serif;
+  color: #414141;
+  font-weight: 400;
+  line-height: 1;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+}

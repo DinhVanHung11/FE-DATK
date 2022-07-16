@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>II&IL Air Quality</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./app.css" />
+    <link
+      rel="icon"
+      href="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.6435-9/97129887_100325658369246_4210339754320855040_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ajKjBA3bamsAX_mYmWR&tn=agtOVMCAty7L_PQA&_nc_ht=scontent.fhan15-1.fna&oh=00_AT9IlHoE94YzzjUh0F00bl0YkI0MLjp-wOAZLq4iuEx3MQ&oe=62C29685"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#!" class="__logo">
+        <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/97129887_100325658369246_4210339754320855040_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lePvJN3nu2MAX8zwDPW&tn=agtOVMCAty7L_PQA&_nc_ht=scontent.fhan2-3.fna&oh=00_AT--yOKsYmMmQgQ48em2LyXUjm8EGr-ezyuuh_a2hDwSAw&oe=62EA2385" alt="">
+        <p class="__logo-text">Air Quality</p>
+      </a>
+      <div class="header-login">
+        <button class="login-home">Đăng nhập</button>
+        <button class="signup-home">Đăng kí</button>
+      </div>
+    </header>
+    <main>
+      <section class="main-heading">
+        <div class="container">
+          <h1>Chất lượng không khí tại Hà Nội</h1>
+          <p>
+            Chỉ số chất lượng không khí (AQI) và ô nhiễm không khí tại Hà Nội
+          </p>
+        </div>
+      </section>
+      <section class="main-content">
+        <div class="container">
+          <div class="dashboard">
+            <div class="dashboard-item active" data-tab="1">Thông số hiện tại</div>
+            <div class="dashboard-item" data-tab="2">Chỉ số AQI</div>
+            <div class="dashboard-item" data-tab="3">Biểu đồ</div>
+            <div class="dashboard-item" data-tab="4">Help</div>
+          </div>
+          <div class="content">
+            <div class="parameter content-item show" data-tab="1">
+              <div class="content-desc parameter-desc">
+                <div class="parameter-item content-desc-item">
+                  <p>SO2</p>
+                </div>
+                <div class="parameter-item content-desc-item">
+                  <p>CO2</p>
+                </div>
+                <div class="parameter-item content-desc-item">
+                  <p>CO</p>
+                </div>
+                <div class="parameter-item content-desc-item">
+                  <p>NO2</p>
+                </div>
+              </div>
+              <div class="content-image">
+                <div class="content-image-overlay"></div>
+                <img src="https://www.iqair.com/assets/img/air-quality-map/iqair-pollution-map-city-preview@1x.webp" alt="">
+              </div>
+            </div>
+            <div class="aqi content-item" data-tab="2">
+              <div class="content-desc aqi-desc">
+                <div class="aqi-item content-desc-item">
+                  <p>SO2</p>
+                </div>
+                <div class="aqi-item content-desc-item">
+                  <p>CO2</p>
+                </div>
+                <div class="aqi-item content-desc-item">
+                  <p>CO</p>
+                </div>
+                <div class="aqi-item content-desc-item">
+                  <p>NO2</p>
+                </div>
+              </div>
+              <div class="content-image">
+                <div class="content-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1643330683233-ff2ac89b002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="">
+              </div>
+            </div>
+            <div class="chart content-item" data-tab="3">
+              3
+              <canvas></canvas>
+            </div>
+            <div class="help content-item" data-tab="4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laboriosam ullam nihil corporis cupiditate nulla eaque necessitatibus alias deleniti voluptatum velit exercitationem facilis quibusdam ab, ex odit natus molestias error.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-middle">
+        <div class="container">
+          <a href="index.html" class="__logo">
+            <img
+              src="https://scontent.fhan15-1.fna.fbcdn.net/v/t1.6435-9/97129887_100325658369246_4210339754320855040_n.png?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ajKjBA3bamsAX_mYmWR&tn=agtOVMCAty7L_PQA&_nc_ht=scontent.fhan15-1.fna&oh=00_AT9IlHoE94YzzjUh0F00bl0YkI0MLjp-wOAZLq4iuEx3MQ&oe=62C29685"
+              alt=""
+            />
+            <p class="__logo-text">Air Quality</p>
+          </a>
+          <ul class="footer-social">
+            <li class="__social-item">
+              <a href="https://www.facebook.com/IIIoTLAB/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="__social-item">
+              <a href="https://www.facebook.com/IIIoTLAB/"
+                ><i class="far fa-envelope"></i
+              ></a>
+            </li>
+            <li class="__social-item">
+              <a href="https://www.facebook.com/IIIoTLAB/"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </li>
+            <li class="__social-item">
+              <a href="https://www.facebook.com/IIIoTLAB/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-country">
+            <div class="__image">
+              <img src="https://cdn.airvisual.net/flags/vietnam.jpg" alt="" />
+            </div>
+            <p class="__country-text">Vietnam</p>
+          </div>
+          <ul class="footer-rules">
+            <li class="footer-rules-item">
+              <a
+                href="https://www.iqair.com/vi/legal/terms-conditions"
+                class="__rules-link"
+                target="_blank"
+                >Điều khoản sử dụng
+              </a>
+            </li>
+            <li class="footer-rules-item">
+              <a
+                href="https://www.iqair.com/vi/legal/terms-of-sale"
+                class="__rules-link"
+                target="_blank"
+                >Điều khoản bán hàng
+              </a>
+            </li>
+            <li class="footer-rules-item">
+              <a
+                href="https://www.iqair.com/vi/legal/privacy-policy"
+                class="__rules-link"
+                target="_blank"
+                >Chính sách bảo mật
+              </a>
+            </li>
+            <li class="footer-rules-item">
+              © 2022 IQAir. Mọi quyền được bảo lưu
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./jquery.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

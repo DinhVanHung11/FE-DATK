@@ -1,0 +1,101 @@
+.main-content {
+  flex-grow: 1;
+  .container {
+    display: flex;
+    gap: 0 40px;
+    height: 100%;
+  }
+
+  .dashboard{
+    flex-basis: 15%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    &-item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 25%;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-transform: uppercase;
+    }
+    &-item.active{
+      background-color: #a8e05f;
+      color: white;
+      box-shadow: rgb(0,0,0,0.3) 0px 7px 10px 0px;
+      transform: scale(1.05);
+    }
+  }
+
+  .content{
+    flex-grow: 1;
+    &-item{
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+    }
+    &-item.show{
+      display: flex;
+      gap: 0 40px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-desc{
+      padding: 20px;
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+      grid-template-rows: 1fr 1fr;
+      &-item{
+        cursor: pointer;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        transition: all 0.25s;
+        &:hover{
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+      }
+    }
+
+    &-image{
+      margin-left: auto;
+      height: 417.6px;
+      width: 320px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border-radius: 8px;
+      &:hover{
+        img{
+          transform: scale(1.1);
+        }
+      }
+      &-overlay{
+        z-index: 2;
+        background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,0));
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: inherit;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.8s;
+        border-radius: inherit;
+      }
+    }
+  }
+}
